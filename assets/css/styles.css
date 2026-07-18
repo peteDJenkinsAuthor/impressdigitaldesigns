@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Rajdhani';
-    src: url('../fonts/Rajdhani-Light.otf') format('opentype');
+    src: url('../fonts/RajdhaniLight.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -44,9 +44,9 @@
 
                 --radius: 14px;
                 --maxw: 1180px;
-                --hd-ttl-font: 'Rajdhani', sans-serif;
-                --sans: 'Inter', sans-serif;
-                --mono: 'KodeMono', 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+                --hd-ttl-font: Rajdhani, sans-serif;
+                --sans: Inter, sans-serif;
+                --mono: KodeMono, 'JetBrains Mono', 'SF Mono', Consolas, monospace;
             }
 
             *,
@@ -166,7 +166,7 @@
             .logo {
                 font-family: var(--hd-ttl-font);
                 font-weight: 300;
-                font-size: 19px;
+                font-size: 26px;
                 display: flex;
                 align-items: center;
                 gap: 9px;
@@ -277,7 +277,7 @@
                 position: relative;
                 z-index: 2;
                 display: grid;
-                grid-template-columns: 1.05fr 0.95fr;
+                grid-template-columns: 0.95fr 1.05fr;
                 gap: 64px;
                 align-items: center;
             }
@@ -409,14 +409,14 @@
             }
             .demo-bar span {
                 font-family: var(--mono);
-                font-size: 18px;
+                font-size: 12px;
                 color: var(--text-dim);
                 margin-left: 8px;
             }
             .demo-split {
                 display: grid;
-                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-                min-height: 300px;
+                grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+                min-height: 480px;
             }
             @media (max-width: 560px) {
                 .demo-split {
@@ -426,8 +426,8 @@
             .demo-code {
                 padding: 20px 18px;
                 font-family: var(--mono);
-                font-size: 20px;
-                line-height: 1.85;
+                font-size: 11px;
+                line-height: 4.85;
                 border-right: 1px solid var(--line);
                 color: #9fb0c9;
                 overflow-x: hidden;
@@ -502,7 +502,7 @@
                 position: relative;
                 display: flex;
                 flex-direction: column;
-                gap: 12px;
+                gap: 50px;
             }
             .render-el {
                 opacity: 0;
@@ -1466,7 +1466,7 @@
                 gap: 16px;
             }
             .foot-row .logo {
-                font-size: 17px;
+                font-size: 26px;
             }
             footer .fmeta {
                 font-family: var(--mono);
