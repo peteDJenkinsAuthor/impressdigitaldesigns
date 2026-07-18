@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2fe0b3"/>
+      <stop offset="100%" stop-color="#22b8c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="36" fill="#0a0d0c"/>
+  <text x="96" y="119" font-family="'Cabinet Grotesk', Arial, sans-serif" font-weight="800"
+        font-size="66" text-anchor="middle" fill="url(#grad)" letter-spacing="-2">IDD</text>
+</svg>

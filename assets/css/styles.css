@@ -1,14 +1,29 @@
 /* Impress Digital Designs — main stylesheet */
 
-/* Eirian — self-hosted, SIL OFL 1.1, © GGBotNet.
-   Eirian.ttf must sit in the same folder as this stylesheet. */
 @font-face {
-    font-family: 'Cabinet Grotesk', sans-serif';
-    src: url('Eirian.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Light.otf') format('opentype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Variable.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KodeMono';
+    src: url('../fonts/KodeMono-Variable.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 
             :root {
                 --ink: #0a0d0c;
@@ -29,9 +44,9 @@
 
                 --radius: 14px;
                 --maxw: 1180px;
-                --serif: 'Cabinet Grotesk', sans-serif;
-                --sans: 'Cabinet Grotesk', sans-serif;
-                --mono: "Eirian", "JetBrains Mono", "SF Mono", Consolas, monospace;
+                --hd-ttl-font: 'Rajdhani', sans-serif;
+                --sans: 'Inter', sans-serif;
+                --mono: 'KodeMono', 'JetBrains Mono', 'SF Mono', Consolas, monospace;
             }
 
             *,
@@ -71,8 +86,8 @@
             h3,
             h4 {
                 margin: 0;
-                font-family: var(--serif);
-                font-weight: 600;
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
                 letter-spacing: -0.01em;
             }
             p {
@@ -149,9 +164,9 @@
                 gap: 1px;
             }
             .logo {
-                font-family: var(--serif);
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
                 font-size: 19px;
-                font-weight: 600;
                 display: flex;
                 align-items: center;
                 gap: 9px;
@@ -281,7 +296,7 @@
                 letter-spacing: -0.015em;
             }
             .hero h1 em {
-                font-style: bold;
+                font-weight: 700;
                 color: var(--accent);
                 background: linear-gradient(
                     180deg,
@@ -291,8 +306,9 @@
                 padding: 0 2px;
             }
             .hero .tagline {
-                font-family: var(--serif);
-                font-style: italic;
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
+                font-style: normal;
                 font-size: 16.5px;
                 color: var(--accent-2);
                 margin-bottom: 20px;
@@ -684,8 +700,9 @@
                 max-width: 46ch;
             }
             .diag-copy .callout {
-                font-family: var(--serif);
-                font-style: italic;
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
+                font-style: normal;
                 font-size: 18px;
                 color: var(--text);
                 border-left: 2px solid var(--accent);
@@ -1106,7 +1123,8 @@
                 border-right: none;
             }
             .stat .num {
-                font-family: var(--serif);
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
                 font-size: 2.4rem;
                 color: var(--accent);
                 display: block;
@@ -1277,7 +1295,8 @@
             .area-col h3 {
                 font-size: 22px;
                 margin-bottom: 18px;
-                font-family: var(--serif);
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
             }
             .area-list {
                 display: flex;
@@ -1342,10 +1361,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-family: var(--serif);
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
                 font-size: 24px;
                 color: var(--ink);
-                font-weight: 700;
                 flex-shrink: 0;
                 overflow: hidden;
                 border: 2px solid var(--line-strong);
@@ -1362,8 +1381,9 @@
                 }
             }
             .founder blockquote {
-                font-family: var(--serif);
-                font-style: italic;
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
+                font-style: normal;
                 font-size: 19px;
                 margin-bottom: 12px;
                 color: var(--text);
@@ -1457,8 +1477,9 @@
                 flex-wrap: wrap;
             }
             footer .foot-tagline {
-                font-family: var(--serif);
-                font-style: italic;
+                font-family: var(--hd-ttl-font);
+                font-weight: 300;
+                font-style: normal;
                 font-size: 13px;
                 color: var(--text-dim);
                 margin-top: 4px;
