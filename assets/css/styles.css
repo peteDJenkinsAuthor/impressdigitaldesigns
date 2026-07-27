@@ -298,12 +298,7 @@
             .hero h1 strong {
                 font-weight: 700;
                 color: var(--accent);
-                background: linear-gradient(
-                    180deg,
-                    transparent 62%,
-                    var(--accent-soft) 62%
-                    text-style:bold;
-                );
+                background: linear-gradient(180deg, transparent 62%, var(--accent-soft) 62%, text-style:bold;);
                 padding: 0 2px;
             }
             .hero .tagline {
