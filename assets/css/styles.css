@@ -302,6 +302,7 @@
                     180deg,
                     transparent 62%,
                     var(--accent-soft) 62%
+                    text-style:bold;
                 );
                 padding: 0 2px;
             }
